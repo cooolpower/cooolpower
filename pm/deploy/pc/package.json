@@ -1,0 +1,64 @@
+// js-config.js
+
+const path = require("path");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+let jsExports = {};
+
+// common Configurations
+const config = {
+	mode: "production",
+	output: {
+		// ex) /dist/css/common.min.js
+		path: __dirname + "/dist/js",
+		filename: "[name].min.js"
+	},
+	devtool: "source-map",
+	optimization: {
+		// minify ie8
+		minimizer: [
+			new UglifyJsPlugin({
+				sourceMap: true,
+				uglifyOptions: {
+					ie8: true
+				}
+			})
+		]
+	},
+	resolve: {
+		modules: ["node_modules"],
+		extensions: [".js", ".json", ".jsx", ".css", ".scss"],
+		alias: {
+			js: path.resolve(__dirname, "entry/js/"),
+			lib: path.resolve(__dirname, "entry/lib/"),
+			// sub-alias
+			components: path.resolve(__dirname, "entry/js/components/")
+		}
+	}
+};
+
+jsExports.service_reemployment = Object.assign({}, config, {
+	entry: {
+		"ui.service.reemployment": "js/service/reemployment/ui.service.reemployment.js"
+	},
+	output: {
+		path: __dirname + "/dist/js/service/reemployment"
+	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				use: [
+					{
+						loader: "babel-loader",
+						options: {
+							presets: ["@babel/preset-env"]
+						}
+					}
+				]
+			}
+		]
+	}
+})
+
+// Return Array of Configurations
+module.exports = jsExports;
