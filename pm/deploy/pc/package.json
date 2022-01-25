@@ -1,64 +1,39 @@
-// js-config.js
-
-const path = require("path");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-let jsExports = {};
-
-// common Configurations
-const config = {
-	mode: "production",
-	output: {
-		// ex) /dist/css/common.min.js
-		path: __dirname + "/dist/js",
-		filename: "[name].min.js"
-	},
-	devtool: "source-map",
-	optimization: {
-		// minify ie8
-		minimizer: [
-			new UglifyJsPlugin({
-				sourceMap: true,
-				uglifyOptions: {
-					ie8: true
-				}
-			})
-		]
-	},
-	resolve: {
-		modules: ["node_modules"],
-		extensions: [".js", ".json", ".jsx", ".css", ".scss"],
-		alias: {
-			js: path.resolve(__dirname, "entry/js/"),
-			lib: path.resolve(__dirname, "entry/lib/"),
-			// sub-alias
-			components: path.resolve(__dirname, "entry/js/components/")
-		}
-	}
-};
-
-jsExports.service_reemployment = Object.assign({}, config, {
-	entry: {
-		"ui.service.reemployment": "js/service/reemployment/ui.service.reemployment.js"
-	},
-	output: {
-		path: __dirname + "/dist/js/service/reemployment"
-	},
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				use: [
-					{
-						loader: "babel-loader",
-						options: {
-							presets: ["@babel/preset-env"]
-						}
-					}
-				]
-			}
-		]
-	}
-})
-
-// Return Array of Configurations
-module.exports = jsExports;
+{
+  "name": "jobkorea-pc-webpack",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production --config webpack.config.js",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "autoprefixer": "^9.6.4",
+    "giflossy": "^3.0.41",
+    "jpegtran": "^1.0.6",
+    "node-sass": "^4.9.3",
+    "sass": "^1.26.11",
+    "style-loader": "^0.22.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-spritesmith": "^1.1.0"   
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ]
+}
