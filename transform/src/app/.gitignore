@@ -1,0 +1,7 @@
+.cache/**
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+.DS_Store
+**/node_modules/*

@@ -1,0 +1,674 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/.pnpm/swiper@11.0.7/node_modules/swiper/swiper.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Swiper 11.0.7
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2024 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: February 27, 2024
+ */
+
+/* FONT_START */
+@font-face {
+  font-family: 'swiper-icons';
+  src: url('data:application/font-woff;charset=utf-8;base64, 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');
+  font-weight: 400;
+  font-style: normal;
+}
+/* FONT_END */
+:root {
+  --swiper-theme-color: #007aff;
+  /*
+  --swiper-preloader-color: var(--swiper-theme-color);
+  --swiper-wrapper-transition-timing-function: initial;
+  */
+}
+:host {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  display: block;
+}
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
+}
+.swiper-android .swiper-slide,
+.swiper-ios .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-horizontal {
+  touch-action: pan-y;
+}
+.swiper-vertical {
+  touch-action: pan-x;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+/* Auto Height */
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+/* 3D Effects */
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+  perspective: 1200px;
+}
+.swiper-3d .swiper-wrapper {
+  transform-style: preserve-3d;
+}
+.swiper-3d {
+  perspective: 1200px;
+}
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-cube-shadow {
+  transform-style: preserve-3d;
+}
+/* CSS Mode */
+.swiper-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+.swiper-css-mode.swiper-horizontal > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+.swiper-css-mode.swiper-vertical > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+  scroll-snap-type: none;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: none;
+}
+.swiper-css-mode.swiper-centered > .swiper-wrapper::before {
+  content: '';
+  flex-shrink: 0;
+  order: 9999;
+}
+.swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: center center;
+  scroll-snap-stop: always;
+}
+.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+  -webkit-margin-start: var(--swiper-centered-offset-before);
+          margin-inline-start: var(--swiper-centered-offset-before);
+}
+.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+  height: 100%;
+  min-height: 1px;
+  width: var(--swiper-centered-offset-after);
+}
+.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+  -webkit-margin-before: var(--swiper-centered-offset-before);
+          margin-block-start: var(--swiper-centered-offset-before);
+}
+.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+  width: 100%;
+  min-width: 1px;
+  height: var(--swiper-centered-offset-after);
+}
+/* Slide styles start */
+/* 3D Shadows */
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.swiper-3d .swiper-slide-shadow {
+  background: rgba(0, 0, 0, 0.15);
+}
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-bottom {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  transform-origin: 50%;
+  box-sizing: border-box;
+  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,
+.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader {
+  animation: swiper-preloader-spin 1s infinite linear;
+}
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color: #fff;
+}
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color: #000;
+}
+@keyframes swiper-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Slide styles end */
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/.pnpm/swiper@11.0.7/node_modules/swiper/modules/navigation.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --swiper-navigation-size: 44px;
+  /*
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-navigation-disabled .swiper-button-prev,
+.swiper-navigation-disabled .swiper-button-next {
+  display: none !important;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: center;
+}
+.swiper-rtl .swiper-button-prev svg,
+.swiper-rtl .swiper-button-next svg {
+  transform: rotate(180deg);
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: auto;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+.swiper-button-lock {
+  display: none;
+}
+/* Navigation font start */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-feature-settings: ;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+}
+/* Navigation font end */
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./src/app/swiper.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.head-banner-swiper {
+  position: relative
+}
+.swiper{
+} 
+
+.swiper-slide {
+  height: 200px;
+  margin-right: 100px;
+  
+}
+
+.swiper-slide a{
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto
+}
+
+.swiper-pagination {
+  z-index: 1;
+  position: absolute;
+  left: auto;
+  padding-left: 5px;
+  right: 20px;
+  bottom: 19px;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: .5;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px);
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[8].use[2]!./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[8].use[3]!./src/app/_components/banner.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.banner_headBannerWrap__M3sJb {
+    min-width: calc( 1240px + (20px * 2));
+    max-width: calc( 1240px + (20px * 2));
+    margin: 32px auto 0;
+    position: relative;
+}
+
+.banner_swiperButtonPrev__81H8l,
+.banner_swiperButtonNext__FVsF5 {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(0%);
+  z-index: 1;
+  margin-top: -20px;
+  font-size: 0;
+  width: 38px;
+  height: 38px;
+  background: rgba(230,236,242,.75);
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .5s;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat
+}
+.banner_swiperButtonPrev__81H8l {
+    left: -20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 13L1.00023 7L7 1' stroke='%23222222' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+.banner_swiperButtonNext__FVsF5 {
+    right: -20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13L7 6.99977L1 0.999539' stroke='%23222222' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+.banner_swiperButtonPrev__81H8l::after,
+.banner_swiperButtonNext__FVsF5::after {
+  display:none;
+}
+.banner_swiperButtonPrev__81H8l:hover,
+.banner_swiperButtonNext__FVsF5:hover {
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,.1215686275);
+  border-color: #003cff;
+  background-color: #fff
+}
+.banner_swiperButtonPrev__81H8l:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 13L1.00023 7L7 1' stroke='%23003CFF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+.banner_swiperButtonNext__FVsF5:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13L7 6.99977L1 0.999539' stroke='%23003CFF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+.banner_headBannerWrap__M3sJb:hover .banner_swiperButtonPrev__81H8l,
+.banner_headBannerWrap__M3sJb:hover .banner_swiperButtonNext__FVsF5 {
+    opacity: 1;
+}
+
+
+
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[0].use[1]!./node_modules/.pnpm/next@14.1.3_@babel+core@7.24.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[0].use[2]!./node_modules/.pnpm/@vanilla-extract+webpack-plugin@2.3.7_@types+node@20.11.30_webpack@5.91.0/node_modules/@vanilla-extract/webpack-plugin/virtualNextFileLoader/dist/vanilla-extract-webpack-plugin-virtualNextFileLoader.cjs.js!./node_modules/.pnpm/@vanilla-extract+webpack-plugin@2.3.7_@types+node@20.11.30_webpack@5.91.0/node_modules/@vanilla-extract/webpack-plugin/vanilla.virtual.css?%7B%22fileName%22%3A%22src%2Fapp%2F(pages)%2Fonepick%2Ffilter%2Ffilter.css.ts.vanilla.css%22%2C%22source%22%3A%22%23H4sIAAAAAAAACuVY227cNhB9z1cQDoxN0FDmxbpYgR%2BaNA8tWhQoWvTR4EqUlglXFCSuV3bRfy9I3bXUwm6bFEiXkFYckaPhmTkjjrxMSM2ru60URXp3h1WZPzw2CPzxAoBS1UILVcSAbWslD5q%2FfQGAVmUMoI8Q4nvTP4pU72KAzPWOi3ynu46651Um1TEGO5GmvDAyKQoOZ6MyVWhYi0du%2B3%2B%2B8DqDur%2FeImwtSkVdSvYQg0zyxs6WvIGpqHjSGpooedgXE7MwiVBph%2B5ZlYsiBn5QNoAdtAL2xvKJ71QzPJScgaHTH6BOvYXFJ21H8qxf31ZVKa9igMsG1EqKFLxMiWn2Jks%2B5ZU6FClMlFRVDF5mWTZFMhMaJqrQvNCjNlixVBzqGETt4x6hKFLexODmph3UGERFkcf9hK2yAwf8ClXwYeiOpcZLpGzsgVHZAASqfMteoTemech%2F7UTq55IXA1r0q0VrK1Xy6V%2BA6zc5gHXtjmcmRV5Aofm%2BjkHCC82rIcyPFStjYM5GlJtOt6KSpam1n1qjrsumvaJkJcJ%2FFIMhvjVkYEvnHylqDWv9IDnUDyXvA8ah6t1BazUGQWDVOdzII9OM7t53ATNt7ljj0si02bIwNRAvsgW%2B7qNHa17BumSJHYxO8gzp4mwRDt38p%2Frg46HWInvo42t6q0cPocszGH2baHHPB6TCNaRwaNoUqVEyR8r%2BvgaktNByRCZyc2PMLBWXzGB5ouJX3uhBzY1VM8GBdHQ5hXWJDPT8ngcTdGjQCq3KYycMEXo6NmfNjWOWaV5ZqwfoLi7cmagHsrVo8F9HX0emHPnXvwgRwME8P9Rc8kT%2FoLaDUdtnpalpdI5vmDbA%2B35vzzYyzUoOVW1EpRJDvps4bSV4z7no7Ir%2BDswUzXGmpziLPct5DA6VfHWRMs1iK7iq7%2FNvmr18m%2BxYVXN9e9AZjN5c0vf1fd5qv91QtOk0t9eZkPJ2YwDbgGYvi%2Fp2s9O6jK%2Bujsejd6SeqvIrghAy2jeX9MMlfV8yvQPp7eYn7APi%2BQwTzwf2hAzbAOl6nQghBIn%2FuEeAUC%2F0GcaeGWHPCGCMILGjZ2KEETDix97ES0K%2FI6ZtrpZWhF6IKcDUo5hKSLwgigDxgtC31yG018wL8I05rJHQi0LfHJJ6mPjAnpnnR5E5rNHeNY08HIVegKk5emEIjbSdB7t5o2rUqranddsNmJf0w8XrhWMrXnKmTQB3l4v7Y1ryTVKb3evyL2pvtMSD7XYnWgnU2ZYq%2BWz0I%2Fb3xeg3X9X%2FgILhKQfhKQeB5SBc4SBwcxAuOUiIg4DEI1EIcGDYJi3%2FWs4Byz%2Fg4N%2FAEQlnRJoSEBoGwhMKGnFoKQhn3J1ysGf3iuX%2FLf1UaXTUQ4imbuKtFpV2zz0WlY49kGEOh1uuj9yUwieP%2Fr1i5fB47n683fNjsuQYq5LdbHrmmr6c8X1RHvRsWj4tBShaEO46mu4NV0o01x7NXYc5zRlM2c1XMCSDYaOLgB%2FZugsvzOy9Pdtpnqvy%2BoxIKT2JErRm%2FXx%2F7c%2BR6XOtY7994vZF%2BfSxraGH7Xxfz63b8cyKWVesqEtWdRXyU18tpzXbdP3B8%2BqLEYStXf30k8veHflnSop58evyGALIoDVHDNpPEM4Cdf07w1h0L8P3F17zMXyLtdpudE0XnzdLlpFZSd9aSRx1h49OyrxzbnCUks5w%2Bsc13hKYRYCrJyMzfIv4UtB0PnZ4HyHKk%2B3nBO0v87uU6YcVAAA%3D%22%7D ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.filter_blind__1opgyzx0 {
+  position: absolute;
+  top: -5000em;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+}
+.filter_filter__1opgyzx1 {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 56px auto 0px;
+}
+.filter_filterBox__1opgyzx2 {
+  position: absolute;
+  width: 600px;
+  top: 52px;
+  left: 0;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  z-index: 99;
+  box-sizing: border-box;
+  display: none;
+  box-shadow: 2px 2px 10px 0 rgba(0,0,0,.05);
+}
+.filter_filterBoxOpen__1opgyzx3 {
+  position: absolute;
+  width: 600px;
+  top: 52px;
+  left: 0;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  z-index: 99;
+  box-sizing: border-box;
+  display: block;
+  box-shadow: 2px 2px 10px 0 rgba(0,0,0,.05);
+}
+.filter_filterBoxUl__1opgyzx4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 32px 24px 32px 32px;
+}
+.filter_filterBoxLi__1opgyzx5 {
+  width: 120px;
+  list-style-type: none;
+}
+.filter_filterBoxButton__1opgyzx6 {
+  border: 1px solid #e8e8e8;
+  color: #6a6a6a;
+  background: #f8f8f8;
+  padding: 13px 0;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.filter_filterBoxButtonActive__1opgyzx7 {
+  border: 1px solid #171717;
+  color: #171717;
+  background: #ffffff;
+  padding: 13px 0;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.filter_title__1opgyzx8 {
+  display: flex;
+  position: relative;
+}
+.filter_titleText__1opgyzx9 {
+  font-size: 28px;
+  color: #171717;
+  letter-spacing: -.5px;
+  line-height: 36px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.filter_titleText__1opgyzx9::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #e8e8e8;
+  margin: 0 16px;
+}
+.filter_selectJob__1opgyzxb {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #b8b8b8;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: -.5px;
+  line-height: 36px;
+}
+.filter_selectJob__1opgyzxb::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 2.5a12.5 12.5 0 100 25 12.5 12.5 0 000-25zm0 23.75a11.25 11.25 0 110-22.5 11.25 11.25 0 010 22.5z' fill='%23D2D2D2'/%3E%3Cpath d='M17.713 13.313l-2.688 2.675-2.687-2.675a.619.619 0 10-.875.875l3.125 3.125a.588.588 0 00.438.187.613.613 0 00.437-.187l3.125-3.125a.619.619 0 00-.875-.875z' fill='%23D2D2D2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  margin-left: 8px;
+}
+.filter_selectJobOpen__1opgyzxc {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #222222;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: -.5px;
+  line-height: 36px;
+}
+.filter_selectJobOpen__1opgyzxc::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 27.5a12.5 12.5 0 100-25 12.5 12.5 0 000 25zm0-23.75a11.25 11.25 0 110 22.5 11.25 11.25 0 010-22.5z' fill='%23222'/%3E%3Cpath d='M12.287 16.687l2.688-2.675 2.687 2.675a.619.619 0 10.875-.875l-3.125-3.125a.588.588 0 00-.438-.187.613.613 0 00-.437.187l-3.125 3.125a.619.619 0 00.875.875z' fill='%23222'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  margin-left: 8px;
+}
+.filter_options__1opgyzxd {
+  display: flex;
+  width: 1280px;
+  margin: 24px auto 0px;
+  justify-content: space-between;
+}
+.filter_optionsWrap__1opgyzxe {
+  display: flex;
+  gap: 12px;
+}
+.filter_searchWrap__1opgyzxf {
+  display: flex;
+}
+.filter_searchInputWrap__1opgyzxg {
+  width: 300px;
+  height: 48px;
+  border: 1px solid #d2d2d2;
+  position: relative;
+  border-radius: 8px;
+}
+.filter_searchInput__1opgyzxh {
+  display: block;
+  padding: 0 58px 0 10px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  color: #333;
+  margin-left: 0;
+  border-radius: 8px;
+  font-size: 15px;
+  border: none;
+  letter-spacing: 0;
+}
+.filter_optionsButton__1opgyzxj {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #d2d2d2;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: #6a6a6a;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.filter_buttonBox__1opgyzxm {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #e8e8e8;
+  background-color: #fff;
+  gap: 8px;
+}
+.filter_searchReset__1opgyzxn {
+  border: 1px solid #d2d2d2;
+  width: 90px;
+  height: 42px;
+  padding-top: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #171717;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter_searchButton__1opgyzxo {
+  border: 1px solid #d2d2d2;
+  width: 120px;
+  height: 42px;
+  padding-top: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #003ecb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
