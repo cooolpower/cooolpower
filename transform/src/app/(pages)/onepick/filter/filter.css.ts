@@ -199,6 +199,10 @@ export const searchInput = style({
   letterSpacing: 0,
 });
 
+export const searchButton = style({
+
+});
+
 export const optionsButtonWrap = style({
 });
 
@@ -226,7 +230,7 @@ export const buttonBox = style({
   backgroundColor: "#fff",
   gap: "8px",
 });
-export const searchReset = style({
+export const resetFilter = style({
   border: "1px solid #d2d2d2",
   width: "90px",
   height: "42px",
@@ -240,7 +244,7 @@ export const searchReset = style({
   alignItems: "center",
   justifyContent: "center",
 });
-export const searchButton = style({
+export const submitFilter = style({
   border: "1px solid #d2d2d2",
   width: "120px",
   height: "42px",

@@ -1,7 +1,6 @@
 "use client";
-import { FormEventHandler, SetStateAction, useEffect, useState } from "react";
+import { useState } from "react";
 import * as styles from "./filter.css";
-import Index from './../../../../../../../next-study/src/app/(beforeLogin)/page';
 
 export default function Filter() {
   let filterBoxItemList = [
@@ -29,7 +28,7 @@ export default function Filter() {
     { id: 22, name: "공공·복지", code: 10047, status: false },
   ];
   const [isToggle, setIsToggle] = useState(false);
-  const [selectedName, setSelectedName] = useState();
+  const [selectedName, setSelectedName] = useState('');
   const [selectedItemNum, setSelectedItemNum] = useState(0);
   const [filterItem, setFilterItem] = useState(new Array(...filterBoxItemList));
   const [buttonStates, setButtonStates] = useState(new Array(filterBoxItemList.length).fill(false));
@@ -47,16 +46,20 @@ export default function Filter() {
   const resetFilter = () => {
     newButtonStates.fill(false);
     setButtonStates(newButtonStates);
+    setSelectedItemNum(0);
+    setIsToggle(!isToggle);
   }
   
   const onSubmit = (e:React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const selectedIndex = newFilterItem.filter(obj => obj.status === true);
+    
     setSelectedItemNum(selectedIndex.length);
     setFilterItem(newFilterItem);
-    setSelectedName(newFilterItem.find(obj => obj.status === true)?.name);
+    setSelectedName(newFilterItem.find(obj => obj.status === true)?.name as string);
+    setIsToggle(!isToggle);
 
-    console.log(selectedIndex.length);
+    console.log(selectedName);
   }
 
   const jobToggle = () => {
@@ -101,8 +104,8 @@ export default function Filter() {
             })}
           </ul>
           <div className={styles.buttonBox}>
-            <button className={styles.searchReset} onClick={resetFilter}>초기화</button>
-            <button className={`${styles.searchButton}`} type="submit" onClick={onSubmit}>적용하기</button>
+            <button className={styles.resetFilter} onClick={resetFilter}>초기화</button>
+            <button className={`${styles.submitFilter}`} type="submit" onClick={onSubmit}>적용하기</button>
           </div>
         </div>
       </div>
@@ -121,6 +124,7 @@ export default function Filter() {
         <div className={styles.searchWrap}>
           <div className={styles.searchInputWrap}>
             <input type="search" className={styles.searchInput} placeholder="기업, 공고명 검색" />
+            <button type="button" className={styles.searchButton}></button>
           </div>
         </div>
       </div>

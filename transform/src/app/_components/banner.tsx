@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { type Swiper as SwiperRef } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,7 +36,7 @@ const banner = [
 
 
 export default function Banner() {
-  const [swiper, setSwiper] = useState<SwiperClass>();
+  const [swiper, setSwiper] = useState<SwiperRef>();
 
   const handlePrev = () => {
     swiper?.slidePrev();
